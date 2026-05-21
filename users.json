@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2026-05-21 14:39:32",
+    "name": "111",
+    "skills": "Python, 数据分析",
+    "goal": "拿国奖",
+    "hours": 5,
+    "contact": "123456789"
+  },
+  {
+    "timestamp": "2026-05-21 14:40:29",
+    "name": "333",
+    "skills": "Python, Java, 文案",
+    "goal": "拿国奖",
+    "hours": 5,
+    "contact": "12345678910"
+  }
+]
