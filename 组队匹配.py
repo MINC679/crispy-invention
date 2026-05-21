@@ -74,11 +74,12 @@ st.set_page_config(page_title="竞赛组队匹配器", page_icon="🤝")
 st.title("🤝 竞赛组队匹配器")
 st.markdown("> AI智能匹配，帮你找到最合适的竞赛队友")
 st.markdown("---")
+st.info("👈 **点开左侧侧边栏**,填写你的信息后即可开始匹配")
 
 with st.sidebar:
     st.header("📝 我的信息")
     name = st.text_input("昵称")
-    skills = st.multiselect("技能", ["Python", "Java", "前端", "设计", "文案", "数据分析", "AI/ML", "演讲", "数学建模"])
+    skills = st.multiselect("技能", ["Python", "Java", "C/C++", "前端", "设计", "文案", "数据分析", "AI/ML", "演讲", "数学建模"])
     goal = st.selectbox("参赛目标", ["拿国奖", "拿省奖", "学技术", "认识朋友"])
     hours = st.slider("每周可投入时间（小时）", 0, 20, 5)
     contact = st.text_input("联系方式（微信号/QQ）", placeholder="方便队友联系你")
@@ -109,14 +110,14 @@ with tab1:
 
 with tab2:
     st.subheader("🤖 AI智能匹配")
-    st.markdown("根据你的技能，推荐最合适的队友")
+    st.markdown("根据你需要的技能，推荐最合适的队友")
 
     my_skills = st.multiselect("你的技能",
-                               ["Python", "Java", "前端", "设计", "文案", "数据分析", "AI/ML", "演讲", "数学建模"])
+                               ["Python", "Java", "C/C++", "前端", "设计", "文案", "数据分析", "AI/ML", "演讲", "数学建模"])
 
     if st.button("开始匹配", type="primary"):
         if not my_skills:
-            st.warning("请先选择你的技能")
+            st.warning("请先选择你需要的技能")
         else:
             users = load_users()
             if users:
