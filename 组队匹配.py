@@ -82,7 +82,7 @@ with st.sidebar:
     skills = st.multiselect("技能", ["Python", "Java", "C/C++", "前端", "设计", "文案", "数据分析", "AI/ML", "演讲", "数学建模"])
     goal = st.selectbox("参赛目标", ["拿国奖", "拿省奖", "学技术", "认识朋友"])
     hours = st.slider("每周可投入时间（小时）", 0, 20, 5)
-    contact = st.text_input("联系方式（微信号/QQ）", placeholder="方便队友联系你")
+    contact = st.text_input("联系方式（微信号/QQ/电话号码）", placeholder="方便队友联系你")
 
     if st.button("✅ 提交信息", type="primary"):
         if name and skills:
@@ -112,7 +112,7 @@ with tab2:
     st.subheader("🤖 AI智能匹配")
     st.markdown("根据你需要的技能，推荐最合适的队友")
 
-    my_skills = st.multiselect("你的技能",
+    my_skills = st.multiselect("你需要的技能",
                                ["Python", "Java", "C/C++", "前端", "设计", "文案", "数据分析", "AI/ML", "演讲", "数学建模"])
 
     if st.button("开始匹配", type="primary"):

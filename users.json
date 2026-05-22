@@ -1,0 +1,18 @@
+[
+  {
+    "timestamp": "2026-05-22 08:30:58",
+    "name": "一只小羊",
+    "skills": "Python, C/C++, 演讲",
+    "goal": "学技术",
+    "hours": 3,
+    "contact": "15439765842"
+  },
+  {
+    "timestamp": "2026-05-22 08:32:34",
+    "name": "艰难的爬山虎",
+    "skills": "Python, C/C++, 演讲, Java, 前端, 设计, 文案, 数据分析, 数学建模",
+    "goal": "拿国奖",
+    "hours": 10,
+    "contact": "KaLinJie4867"
+  }
+]
